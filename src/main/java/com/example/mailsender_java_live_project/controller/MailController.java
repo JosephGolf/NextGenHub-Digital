@@ -2,7 +2,6 @@ package com.example.mailsender_java_live_project.controller;
 
 
 import com.example.mailsender_java_live_project.dto.CustomerContactMailDto;
-import com.example.mailsender_java_live_project.model.User;
 import com.example.mailsender_java_live_project.service.CustomerContactMailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,12 +16,12 @@ public class MailController {
 
     @GetMapping()
     public String home(){
-        return "dist/index";
+        return "index.html";
     }
 
     @GetMapping("/contactus")
     public String contactus(){
-        return "dist/contactus";
+        return "contactus.html";
     }
 
     @Autowired
@@ -38,7 +37,7 @@ public class MailController {
             model.addAttribute("send", customerContactMailDto);
             customerContactMailService.sendNotification(customerContactMailDto);
 
-            return "dist/index";
+            return "index.html";
         } catch (MailException e) {
         LOGGER.error("Could Not send mail to {}" , customerContactMailDto.getName() , e);
         }
