@@ -32,7 +32,7 @@
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-            <form class="login100-form validate-form"  action="/send" method="post" object="send">
+            <form class="login100-form validate-form" action="#" th:action="@{/send}" method="post" th:object="${send}">
 
 <!--                <div class="login100-form-social flex-c-m mb-5">-->
 <!--                    <a th:href="@{index.html}" class="login100-form-social-item flex-c-m bg1 m-r-5">-->
@@ -45,26 +45,26 @@
 					</span>
 
                 <div class="wrap-input100 validate-input" data-validate = "Valid name is required: ex@abc.xyz">
-                    <input class="input100"  type="text" name="name" >
+                    <input class="input100"  type="text" name="name" th:field="*{name}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Full Name</span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                     <!--						<input class="input100" th:field="*{email}" type="text" name="email" >-->
-                    <input class="input100" type="text" name="email" >
+                    <input class="input100" type="text" name="email" th:field="*{email}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Email</span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Phone Number is required">
-                    <input class="input100" type="tel" name="phone">
+                    <input class="input100" type="tel" name="phone" th:field="*{phone}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Phone Number</span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Please Enter a Message">
-                    <input class="input100" name="message">
+                    <input class="input100" name="message" th:field="*{message}">
                     <span class="focus-input100"></span>
                     <textarea class="label-input100"> Message </textarea>
                 </div>
