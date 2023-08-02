@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "nextgenhub.com.ng",
+  "Id": "f69325d3-d5d0-470c-b451-060b985f020d"
+}
