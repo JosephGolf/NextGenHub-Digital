@@ -139,12 +139,46 @@
     <div class="login100-more">
         <h3>Contact Information:</h3>
 <!--        <p>Address: Your Address Here</p>-->
-        <p>Email: info@nextgenhub.com.ng</p>
-        <p>Phone: +234 813 856 3840 | +234 706 885 8151 | +234 706 784 7829</p>
+        <p>Email: <a href="mailto:info@nextgenhub.com.ng" style="color: indigo;">info@nextgenhub.com.ng</a></p>
+        <p>Phone:
+            <span class="phone-number" data-phone="+2348138563840">+234 813 856 3840</span> |
+            <span class="phone-number" data-phone="+2347068858151">+234 706 885 8151</span> |
+            <span class="phone-number" data-phone="+2347067847829">+234 706 784 7829</span>
+        </p>
     </div>
 </footer>
 
 <!--===============================================================================================-->
+
+<script>
+    const phoneNumbers = document.querySelectorAll('.phone-number');
+
+    phoneNumbers.forEach(number => {
+        number.addEventListener('click', () => {
+            const phoneNumber = number.getAttribute('data-phone');
+            const action = confirm('What action do you want to take with this phone number?\n\nPress "OK" to copy to clipboard, or "Cancel" to open the default dialer.');
+
+            if (action) {
+                copyToClipboard(phoneNumber);
+            } else {
+                window.open(`tel:${phoneNumber}`, '_blank');
+            }
+        });
+    });
+
+    function copyToClipboard(text) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('Phone number copied to clipboard!');
+    }
+</script>
+</body>
+</html>
+
 <script src="src/main/resources/static/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 <script src="src/main/resources/static/vendor/animsition/js/animsition.min.js"></script>
