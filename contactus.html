@@ -27,6 +27,42 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/util.css">
     <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('src/main/resources/static/assets/img/nextgenhub2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: Arial, sans-serif;
+        }
+        .container-login100 {
+            position: relative;
+            z-index: 1;
+        }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        border: 0;
+        outline: 0;
+    }
+        .login100-more {
+            height: calc(110vh - 100px); /* Adjust the height as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Push the content to the bottom of the container */
+        }
+        /* Add specific styles for text in the footer */
+        .footer h3,
+        .footer p {
+            color: white;
+        }
+    </style>
     <!--===============================================================================================-->
 </head>
 <body style="background-color: #666666;">
@@ -54,7 +90,7 @@
                 </div>
 
                 <span class="login100-form-title p-b-43">
-						CONTACT US
+						MESSAGE US
 					</span>
 
                 <div class="wrap-input100 validate-input" data-validate = "Valid name is required: ex@abc.xyz">
@@ -89,12 +125,22 @@
                     </button>
 
                 </div>
+
             </form>
-            <div  class="login100-more" style="'background-image: url(src/main/resources/static/assets/img/nextgenhub2.jpg);'">
+            <div class="login100-more" style="background-image: url(src/main/resources/static/assets/img/nextgenhub2.jpg);">
             </div>
+
         </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="login100-more">
+        <h3>Contact Information:</h3>
+<!--        <p>Address: Your Address Here</p>-->
+        <p>Email: info@nextgenhub.com.ng</p>
+        <p>Phone: +234 813 856 3840 | +234 706 885 8151 | +234 706 784 7829</p>
+    </div>
+</footer>
 
 <!--===============================================================================================-->
 <script src="src/main/resources/static/vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -112,5 +158,6 @@
 <script src="src/main/resources/static/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 <script src="src/main/resources/static/js/main.js"></script>
+
 </body>
 </html>
