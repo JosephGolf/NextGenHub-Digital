@@ -1,327 +1,546 @@
 <!DOCTYPE html>
-<html lang="en"xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NXG-Hub Digital Technologies</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="./images/LOGO%201.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="./js/main.js"></script>
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-<!--        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2639559948595306"-->
-<!--                crossorigin="anonymous"></script>-->
-        <title> NextGen Hub </title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="src/main/resources/static/assets/img/Nxtgen-navbar-logo.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="src/main/resources/static/css/styles.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="src/main/resources/static/assets/img/Nxtgen-navbar-logo.png">
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-<!--        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2639559948595306"-->
-<!--                crossorigin="anonymous"></script>-->
-<!--        &lt;!&ndash; New Ad &ndash;&gt;-->
-<!--        <ins class="adsbygoogle"-->
-<!--             style="display:block"-->
-<!--             data-ad-client="ca-pub-2639559948595306"-->
-<!--             data-ad-slot="4738105870"-->
-<!--             data-ad-format="auto"-->
-<!--             data-full-width-responsive="true"></ins>-->
-<!--        <script>-->
-<!--            (adsbygoogle = window.adsbygoogle || []).push({});-->
-<!--        </script>-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="src/main/resources/static/assets/img/Nxtgen-navbar-logo.png" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc7IK-EomEuDziqtWkLMnJICFJc7gk7dmZo_rmLtt8A7N6DiQ/viewform?usp=sf_link">Register</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio"> Events </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"><img src="./images/LOGO 1.png" alt=""></a>
+    <div class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#service">services</a></li>
+            <li><a href="#training">training</a></li>
+            <li><a href="#team">nxg-job-hub</a></li>
+            <li><a href="careers.html">career</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="home">
+    <h1 class="fade-element">Engineering the Future through Technology Innovation</h1>
+    <h2 class="fade-element">with NXG-HUB</h2>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+</section>
+
+<section id="about" class="about">
+    <h1 class="heading">about us</h1>
+    <div class="row">
+        <div class="content">
+            <h3>We bring you creativity at its best!</h3>
+            <p>NextGenHub(NXG-Hub) is a group of Software developers and IT Consultants from all spheres of the Information Technology world, endued with experiences, bright minds and exposure. Ours is a team of creatives that is brainstorming on great ideas,<b> all. the. time.</b><br>
+                With our skills put together, you get an ensemble capable of doing anything and everything your brand | career needs. <br>We are on a mission to re-engineer the world through Technology.</p>
+            <a href="#"><button class="btn">Read More</button></a>
+        </div>
+    </div>
+</section>
+
+<div class="pt-5 pb-5" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div class="section-head col-sm-12" id="service">
+                <h1>Our Services</h1>
+                <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 rainbow-background">
+                <div class="item">
+                    <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
+                    <h6>IT Training</h6>
+                    <p> We Organize Software Development Training to Tech Professionals and Aspiring Tech Professionals, equipping them with necessary skills required to thrive in the Tech Industry</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 rainbow-background">
+                <div class="item" >
+                    <!--              <span class="fa-stack fa-4x ">-->
+                    <!--                            <i class="fas fa-circle fa-stack-2x text-info" style="color: aliceblue"> </i>-->
+                    <!--                            <i class="fas fa-laptop-code fa-stack-1x fa-inverse " ></i>-->
+                    <!--                        </span>-->
+                    <span class="icon feature_box_col_two"><i class="fas fa-laptop-code"></i></span>
+                    <h6>Software Development</h6>
+                    <p> Our team of Professional Engineers are involved in building real world solutions and applications from conceptualization to deployment for business use cases. Our Custom Software Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 rainbow-background">
+                <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+                    <h6>Consulting Services</h6>
+                    <p>We offer IT Consultancy Services.. <a href="#contact" style="color: #006a99"> Contact us today!<br><br><br></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<section class="counters">
+    <div class="container">
+        <!--        <div>-->
+        <!--            <i class="far fa-clock fa-4x"></i>-->
+        <!--            <div class="counter" data-target="13500">0</div>-->
+        <!--            <h3>Working Hours</h3>-->
+        <!--        </div>-->
+        <!--        <div>-->
+        <!--            <i class="fas fa-gift fa-4x"></i>-->
+        <!--            <div class="counter" data-target="720">0</div>-->
+        <!--            <h3>Completed Projects</h3>-->
+        <!--        </div>-->
+        <!--        <div>-->
+        <!--            <i class="fas fa-users fa-4x"></i>-->
+        <!--            <div class="counter" data-target="480">0</div>-->
+        <!--            <h3>Happy Clients</h3>-->
+        <!--        </div>-->
+        <div>
+            <!--            <i class="fas fa-award fa-4x"></i>-->
+            <div class="ion-ios-time" data-target="120">0</div>
+            <!--            <div> </div>-->
+            <!--            <h3>Awards Received</h3>-->
+        </div>
+    </div>
+</section>
+
+<div class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="section-head-1 col-sm-12" style="text-align: center;">
+                <h4 style="margin-top: -5rem;" id="training"><span>Our</span> Mission</h4>
+
+                <p>The objective of NXG-HUB Digital Technologies is to enable a large number of youth to take up <br>industry-relevant skill training that will help them<br> in securing a better livelihood.
+                    <br>while providing real world technology solutions to corporate and government organizations towards digitizing the economy of Africa.
+                </p>
+            </div>
+
+            <!--        <div class="col-lg-4 col-sm-6">-->
+            <!--          -->
+            <!--          <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>-->
+            <!--            <h6>Project-1</h6>-->
+            <!--            -->
+            <!--            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>-->
+            <!--          </div>-->
+            <!--        </div>-->
+
+            <div class="col-lg-4 col-sm-6 mx-auto rainbow-background">
+                <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
+                    <h6>Register for Our Next Cohort</h6>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7IK-EomEuDziqtWkLMnJICFJc7gk7dmZo_rmLtt8A7N6DiQ/viewform?usp=sf_link" target="_blank"><p>Click here to Register for our Next Tech BootCamp<br><br><br></p></a>
+                </div>
+            </div>
+            <!--        <div class="col-lg-4 col-sm-6">-->
+            <!--          <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>-->
+            <!--            <h6>Project-3</h6>-->
+            <!--            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>-->
+            <!--          </div>-->
+            <!--        </div>-->
+        </div>
+    </div>
+</div>
+
+<div class="communicate">
+    <h3>Planning your next Project?</h3>
+    <p>Message a Consultant! and our team will get back to you shortly!</p>
+    <a href="#contact"><button class="btn">Contact Now</button></a>
+</div>
+
+<!--<div class="testimonials mt-100">-->
+<!--    <div class="container">-->
+<!--        <div class="section-header" style="text-align: center;">-->
+<!--            <h2 style="margin-top: -15rem;">Testimonials</h2>-->
+<!--            <p style="font-size: 2rem;">-->
+<!--                See what people have to say about us-->
+<!--            </p>-->
+<!--        </div>-->
+
+<!--        <div class="owl-carousel testimonials-carousel">-->
+<!--            <div class="testimonial-item row align-items-center">-->
+<!--                <div class="testimonial-img">-->
+<!--                    <img src="./images/testimonial-1.jpg" alt="Testimonial image">-->
+<!--                </div>-->
+<!--                <div class="testimonial-text">-->
+<!--                    <h3>Person-1</h3>-->
+<!--                    <h4>Designation</h4>-->
+<!--                    <p>-->
+<!--                        Testimonial-->
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="testimonial-item row align-items-center">-->
+<!--                <div class="testimonial-img">-->
+<!--                    <img src="./images/testimonial-2.jpg" alt="Testimonial image">-->
+<!--                </div>-->
+<!--                <div class="testimonial-text">-->
+<!--                    <h3>Person-2</h3>-->
+<!--                    <h4>Designation</h4>-->
+<!--                    <p>-->
+<!--                        Testimonial-->
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="testimonial-item row align-items-center">-->
+<!--                <div class="testimonial-img">-->
+<!--                    <img src="./images/testimonial-3.jpg" alt="Testimonial image">-->
+<!--                </div>-->
+<!--                <div class="testimonial-text">-->
+<!--                    <h3>Person-3</h3>-->
+<!--                    <h4>Designation</h4>-->
+<!--                    <p>-->
+<!--                        Testimonial-->
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="testimonial-item row align-items-center">-->
+<!--                <div class="testimonial-img">-->
+<!--                    <img src="./images/testimonial-4.jpg" alt="Testimonial image">-->
+<!--                </div>-->
+<!--                <div class="testimonial-text">-->
+<!--                    <h3>Person-4</h3>-->
+<!--                    <h4>Designation</h4>-->
+<!--                    <p>-->
+<!--                        Testimonial-->
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="testimonial-item row align-items-center">-->
+<!--                <div class="testimonial-img">-->
+<!--                    <img src="./images/testimonial-5.jpg" alt="Testimonial image">-->
+<!--                </div>-->
+<!--                <div class="testimonial-text">-->
+<!--                    <h3>Person-5</h3>-->
+<!--                    <h4>Designation</h4>-->
+<!--                    <p>-->
+<!--                        Testimonial-->
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="clients mt-100">
+    <div class="container">
+        <div class="section-header">
+            <!--            <h2>Our Clients</h2>-->
+            <p>
+                We don't just build softwares, we build your business | we build your career.
+            </p>
+        </div>
+        <!--        <div class="owl-carousel clients-carousel">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--            <img src="./images/image.png" alt="Client Logo">-->
+        <!--        </div>-->
+    </div>
+</div>
+<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!--<section class="team" style="margin-top: 7rem;">-->
+<!--  <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>-->
+<!--  <p></p>-->
+<!--  <div class="row">-->
+<!--      <div class="card">-->
+<!--          <div class="image">-->
+<!--              <img src="./images/pexels-andrea-piacquadio-845434.jpg" alt="Team member 1">-->
+<!--          </div>-->
+<!--          <div class="info">-->
+<!--              <h3>Schott Watkins</h3>-->
+<!--              <span>Web Developer</span>-->
+<!--              <div class="icons">-->
+<!--                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>-->
+<!--                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>-->
+<!--                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>-->
+<!--                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <div class="row">-->
+<!--      <div class="card">-->
+<!--          <div class="image">-->
+<!--              <img src="./images/pexels-vinicius-wiesehofer-1130624.jpg" alt="Team member 1">-->
+<!--          </div>-->
+<!--          <div class="info">-->
+<!--              <h3>Nicole Bell</h3>-->
+<!--              <span>Mobile Developer</span>-->
+<!--              <div class="icons">-->
+<!--                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>-->
+<!--                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>-->
+<!--                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>-->
+<!--                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <div class="row">-->
+<!--      <div class="card">-->
+<!--          <div class="image">-->
+<!--              <img src="./images/pexels-hussein-altameemi-2776353.jpg" alt="Team member 1">-->
+<!--          </div>-->
+<!--          <div class="info">-->
+<!--              <h3>John Doe</h3>-->
+<!--              <span>Graphic Designer</span>-->
+<!--              <div class="icons">-->
+<!--                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>-->
+<!--                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>-->
+<!--                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>-->
+<!--                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <div class="row">-->
+<!--      <div class="card">-->
+<!--          <div class="image">-->
+<!--              <img src="./images/pexels-andrea-piacquadio-745136.jpg" alt="Team member 1">-->
+<!--          </div>-->
+<!--          <div class="info">-->
+<!--              <h3>Rose Matthews</h3>-->
+<!--              <span>Web Designer</span>-->
+<!--              <div class="icons">-->
+<!--                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>-->
+<!--                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>-->
+<!--                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>-->
+<!--                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section id="contact" class="contact">
+    <h1 class="heading">get in touch</h1>
+</section>
+<div class="contact-in">
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4389013083916!2d3.320067914378933!3d6.558780525294524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d88d3e34c35%3A0x9d2c2a5605ccf5dd!2sOshodi-Isolo%20Local%20Government%20Area!5e0!3m2!1sen!2sus!4v1644684739958!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact-form">
+        <form method="POST" data-netlify="true">
+            <!--            action="./contactme.php"-->
+            <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone">
+            <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
+            <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
+            <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+        </form>
+    </div>
+</div>
+
+<section class="faq">
+    <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
+    <div class="row">
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How much will it cost?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc.
+                        Then we’ll be able to give you a ballpark figure.
+                        If you’re still interested, we’ll come to your place of business and come up with a firm quote. For Our Trainings, Cost of Training depends on chosen Stack.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How long does a project last?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>The time limit of any assignment or project is normally dictated by the client. If you have any time limit in mind we will attempt to assemble it for you.
+                        The main general delay in concluding a project is waiting for the product requirement to be sent to us by the client. We follow an Agile approach in handling Projects.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How do I associate with NXG-HUB?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>The process begins when you contact us with your requirements or enquiry. We analyze your requirements and respond to you.
+                        On the basis of the further discussion, you can choose an engagement model that suits you the best.
+                        After that, we begin the process of development or training enrollment.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>Can you help my current website look more professional?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Yes. Give us your requirements and we have experienced expertise to help you give your brand a
+                        new professional website that looks really wonderful! using modern state-of-the-art technologies</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>When do I pay?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs.
+                        We understand that this is a big investment and want to help you budget for the expense in whatever way possible.
+                        We accept checks, PayPal, and all major credit cards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="privacy-policy.html">Privacy policy</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <a class="btn btn-l text-uppercase" style="background-color: #0dcaf0; color: white" href="#services">Tell Me More</a>
-            </div>
-        </header>
-        <!-- Sub-Header-->
-        <div class="title" style="background-color: black; color: white; height: 100px; text-align: center">
-            <br>
-            <a style="color: white" href="https://docs.google.com/forms/d/e/1FAIpQLSc7IK-EomEuDziqtWkLMnJICFJc7gk7dmZo_rmLtt8A7N6DiQ/viewform?usp=sf_link" target="_blank">
-                <h1 class="name"> Click here to Register for our Next Cohort&gt;&gt;&gt; </h1>
-            </a>
-            <br>
-        </div>
 
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted"> Engineering our future…TODAY! </h3>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#training">Training</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#team">NXG-Job-Hub</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
+                    </ul>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-info"></i>
-                            <i class="fas fa-chalkboard-user fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3" style="color: #006a99"> IT Training </h4>
-                        <p class="text-muted"> We Organize Software Development Training to Software Developers and Aspiring Developers, equipping them with necessary skills required to thrive in the Tech Industry</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-info"></i>
-                            <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3" style="color: #006a99"> Software Development </h4>
-                        <p class="text-muted"> Our team of Professional Engineers are involved in building real world solutions and applications from conceptualization to deployment for business use cases </p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-info"></i>
-                            <i class="fas fa-browsers fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3" style="color: #006a99">Consulting Service</h4>
-                        <p class="text-muted"> We offer IT Consultancy Services. <a href="contactus.html" style="color: #006a99"> Contact us today! </a> </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase"> Events - Blog - Community</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="src/main/resources/static/assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Upcoming Events</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="src/main/resources/static/assets/img/portfolio/nextgen-img.png" alt="..." />
-                            </a>
-                            <br>
-                            <br>
-                            <br>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"> Blog </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="src/main/resources/static/assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"> Community </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                <ul class="timeline">x
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="src/main/resources/static/assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
+                <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
+                    <h4>Contact Us</h4>
+                    <p>
+                        1 Chris Okafor Street<br>
+                        Isolo, Lagos<br>
+                        Nigeria <br>
+                        Phone:
+                        <span class="phone-number" data-phone="+2347038563840"> +234-813-856-3840</span> | <br>
+                        <span class="phone-number" data-phone="+2347068858151">+234 706 885 8151</span> |
+                        <span class="phone-number" data-phone="+2347067847829">+234 706 784 7829</span> <br>
+                        <strong>Email: <a href="mailto:info@nextgenhub.com.ng" style="color: white;">info@nextgenhub.com.ng<br></a></strong>
+                    </p>
 
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"> NextGenHub is a group of  Software developers and IT Consultants from all spheres of the Information Technology world, endued with experiences, bright minds and exposure. We are on a mission to re-engineer the world through Technology </br> </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="src/main/resources/static/assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4> VISION </h4>
-                                <h4 class="subheading"> What is our Mission and Vision </h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"> - Empowering tomorrow's leaders with the right tools
-                                Fossils power today’s markets and economy…data will power most of what matters tomorrow.
-                                <br>
-                                <br>
-                            - To bridge the gap of knowledge, thus producing economic relevant personnel for sustainable development through Technology.</p> </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="src/main/resources/static/assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading"> Why NextGenHub? </h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Productivity
-                            <br>
-                                Knowledge & Expertise.
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100086433378505" target = "_blank"><i class="ion-logo-facebook"></i></a>
+                        <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/nextgenhub-digital" target = "_blank"><i class="ion-logo-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
+                        <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
+                    </div>
 
-                            </p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="src/main/resources/static/assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4> How we stand Out? </h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Our ultimate goal is to deliver quality IT solutions that stand the test of time.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </section>
+                </div>
 
-        <!-- Clients-->
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; NexGenHubDigital 2022</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100086433378505" target = "_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/nextgenhub-digital" target = "_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="privacy-policy.html">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
+                <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <h4>Subscription</h4>
+                    <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand | Career Needs. Subscribe Here To Get Our Latest Updates.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit"  value="Subscribe">
+                    </form>
                 </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="src/main/resources/static/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Register for our Next Cohort</h2>
-                                            <strong> <a href = "https://docs.google.com/forms/d/e/1FAIpQLSc7IK-EomEuDziqtWkLMnJICFJc7gk7dmZo_rmLtt8A7N6DiQ/viewform?usp=sf_link"> Register for Our Next Cohort </a> </strong>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="src/main/resources/static/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase"> Visit our Blog</h2>
-                                   <a href="https://medium.com/@nextgenhub" target="_blank"> <p class="item-intro text-muted"> Click here>>></p></a>
-                                    <img class="img-fluid d-block mx-auto" src="src/main/resources/static/assets/img/portfolio/nextgen-img.png" alt="..." />
+    </div>
 
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
+                Copyright &copy; 2022 NXG-HUB DIGITAL TECHNOLOGIES LTD. All Rights Reserved.
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="src/main/resources/static/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase"> Join Our Slack Community </h2>
-                                    <a href="https://join.slack.com/t/newworkspace-9d11638/shared_invite/zt-1i1xnlzld-faUUhy2xfyeYbbJqMs8Hww" target="_blank"><p class="item-intro text-muted">Click here to Join Our Slack Community>>></p></a>
-                                    <img class="img-fluid d-block mx-auto" src="src/main/resources/static/assets/img/portfolio/3.jpg" alt="..." />
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
 
-        <!-- Portfolio item 4 modal popup-->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="src/main/resources/static/js/scripts.js"></script>
-    </body>
+<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+<script>
+    function updateCurrentTime() {
+        const timeDiv = document.querySelector('.ion-ios-time[data-target="120"]');
+        const currentTime = new Date();
+        const hours = currentTime.getHours();
+        const minutes = currentTime.getMinutes();
+        const seconds = currentTime.getSeconds();
+        const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+        timeDiv.textContent = formattedTime;
+    }
+
+    // Update the time immediately and then every second
+    updateCurrentTime();
+    setInterval(updateCurrentTime, 1000);
+</script>
+
+<script>
+    const phoneNumbers = document.querySelectorAll('.phone-number');
+
+    phoneNumbers.forEach(number => {
+        number.addEventListener('click', () => {
+            const phoneNumber = number.getAttribute('data-phone');
+            const action = confirm('What action do you want to take with this phone number?\n\nPress "OK" to copy to clipboard, or "Cancel" to open the default dialer.');
+
+            if (action) {
+                copyToClipboard(phoneNumber);
+            } else {
+                window.open(`tel:${phoneNumber}`, '_blank');
+            }
+        });
+    });
+
+    function copyToClipboard(text) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('Phone number copied to clipboard!');
+    }
+</script>
+
+</body>
 </html>
