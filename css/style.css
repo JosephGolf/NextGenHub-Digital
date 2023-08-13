@@ -234,7 +234,7 @@ body {
 /* For smaller screens */
 @media (max-width: 767px) {
     .bg-image {
-        background-image: url(../images/dev-team-brainstorm.jpg);
+        background-image: url(../images/dev-team-brainstorm-2.jpg);
         background-size: contain;
         background-position: center center;
     }
