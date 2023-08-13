@@ -73,8 +73,10 @@ body{
 .home{
     min-height: 70vh;
     width: 100vw;
-    background-image: url(../images/img3.jpg);
-    background-size: cover;
+    background-image: url(../images/nxg-careers.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +88,7 @@ body{
 }
 
 .home h2{
-    color: #fff;
+    color: #FFFFFF;
     font-size: 5.5rem;
 }
 
